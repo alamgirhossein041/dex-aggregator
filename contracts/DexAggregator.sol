@@ -57,17 +57,17 @@ contract DexAggregator is Ownable {
         return (adapter.contractAddress, adapter.name, adapter.active);
     }
 
-    // function updateDexAdapter(
-    //     uint _dexId,
-    //     address _contractAddress,
-    //     string memory _name,
-    //     bool _active
-    // ) public onlyOwner {
-    //     // TODO: Check correct id
-    //     // TODO: Check if the address belongs to an IDexAdapter contract
+    function updateDexAdapter(
+        uint _dexId,
+        address _contractAddress,
+        string memory _name,
+        bool _active
+    ) public onlyOwner {
+        // TODO: Check correct id
+        // TODO: Check if the address belongs to an IDexAdapter contract
 
-    //     dexAdapters[_dexId] = DexAdapter(_contractAddress, _name, _active);
-    // }
+        adapters[_dexId] = DexAdapter(_contractAddress, _name, _active);
+    }
 
     function getNumDexAdapters() public view returns (uint256, uint256) {
         return (numActiveDexAdapters, numDexAdapters);
