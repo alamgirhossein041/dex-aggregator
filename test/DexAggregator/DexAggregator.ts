@@ -3,7 +3,7 @@ import type { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signe
 import { ethers } from "hardhat";
 
 import type { Signers } from "../types";
-import { shouldAddANewDex } from "./DexAggregator.behavior";
+import { shouldAddANewDexAdapter } from "./DexAggregator.behavior";
 import { deployDexAggregatorFixture } from "./DexAggregator.fixture";
 
 describe("Unit tests", function () {
@@ -12,6 +12,7 @@ describe("Unit tests", function () {
 
     const signers: SignerWithAddress[] = await ethers.getSigners();
     this.signers.admin = signers[0];
+    this.signers.user1 = signers[1];
 
     this.loadFixture = loadFixture;
   });
@@ -22,6 +23,6 @@ describe("Unit tests", function () {
       this.dexAggregator = dexAggregator;
     });
 
-    shouldAddANewDex();
+    shouldAddANewDexAdapter();
   });
 });

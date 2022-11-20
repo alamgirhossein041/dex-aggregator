@@ -2,9 +2,9 @@
 pragma solidity >=0.8.4;
 
 /**
- * @title Dex interface.
+ * @title DexAdapter interface.
  */
-interface IDex {
+interface IDexAdapter {
     /**
      * @notice Contract initializer method.
      * @param _symbol - Collateral ERC20 token symbol.
