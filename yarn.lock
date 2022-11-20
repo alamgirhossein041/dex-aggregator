@@ -582,7 +582,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ethersproject/bignumber@npm:5.7.0, @ethersproject/bignumber@npm:^5.7.0":
+"@ethersproject/bignumber@npm:5.7.0, @ethersproject/bignumber@npm:^5.5.0, @ethersproject/bignumber@npm:^5.7.0":
   version: 5.7.0
   resolution: "@ethersproject/bignumber@npm:5.7.0"
   dependencies:
@@ -1434,6 +1434,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@openzeppelin/contracts@npm:^4.8.0":
+  version: 4.8.0
+  resolution: "@openzeppelin/contracts@npm:4.8.0"
+  checksum: dfab51a7f91735cfb1e94dd5074736b0dac0207e4ebf26eb46b32defd3b67adce5a36b248daa7b841c21be74863c1e37cf92ed194a9c36d3f8c5326d1a24242a
+  languageName: node
+  linkType: hard
+
 "@prb/hardhat-template@workspace:.":
   version: 0.0.0-use.local
   resolution: "@prb/hardhat-template@workspace:."
@@ -1450,6 +1457,7 @@ __metadata:
     "@nomicfoundation/hardhat-toolbox": ^2.0.0
     "@nomiclabs/hardhat-ethers": ^2.2.1
     "@nomiclabs/hardhat-etherscan": ^3.1.2
+    "@openzeppelin/contracts": ^4.8.0
     "@trivago/prettier-plugin-sort-imports": ^3.4.0
     "@typechain/ethers-v5": ^10.1.1
     "@typechain/hardhat": ^6.1.4
@@ -1460,6 +1468,8 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.42.0
     "@typescript-eslint/parser": ^5.42.0
     chai: ^4.3.6
+    chai-bignumber: ^3.1.0
+    chai-bn: ^0.3.1
     commitizen: ^4.2.5
     cross-env: ^7.0.3
     cz-conventional-changelog: ^3.3.0
@@ -1467,6 +1477,7 @@ __metadata:
     eslint: ^8.26.0
     eslint-config-prettier: ^8.5.0
     ethers: ^5.7.2
+    evm-bn: ^1.1.2
     fs-extra: ^10.1.0
     hardhat: ^2.12.2
     hardhat-gas-reporter: ^1.0.9
@@ -2975,6 +2986,23 @@ __metadata:
   peerDependencies:
     chai: ">= 2.1.2 < 5"
   checksum: 7262868a5b51a12af4e432838ddf97a893109266a505808e1868ba63a12de7ee1166e9d43b5c501a190c377c1b11ecb9ff8e093c89f097ad96c397e8ec0f8d6a
+  languageName: node
+  linkType: hard
+
+"chai-bignumber@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "chai-bignumber@npm:3.1.0"
+  checksum: cbdd8a713c1c1a55a4c52ca08cf0d482c62712c32c79140373b65464b8b93f785bbd2c2e4da20d9b8e342f6548c4445999d2e3450858fbbe7dae82b0309247b2
+  languageName: node
+  linkType: hard
+
+"chai-bn@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "chai-bn@npm:0.3.1"
+  peerDependencies:
+    bn.js: ^5.0.0
+    chai: ^4.0.0
+  checksum: 316a82b98df2a1e66edeee0e835fd7b418c3b5e1794b69264eb76be65d1ecea1f3a9ce2f1f94ec7f0f6964c579c2986999d7bcab98d30f9160ec753b4fdfd692
   languageName: node
   linkType: hard
 
@@ -4529,6 +4557,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"evm-bn@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "evm-bn@npm:1.1.2"
+  dependencies:
+    "@ethersproject/bignumber": ^5.5.0
+    from-exponential: ^1.1.1
+  peerDependencies:
+    "@ethersproject/bignumber": 5.x
+  checksum: 863c9f055b07767f916a76a231aa0110f1e19724cdc2c8fa60e68c16f8d6e6b0652ae3780a70628fe8e32144fa58e678e6f893c3c2caf25658aa8c435a3f5787
+  languageName: node
+  linkType: hard
+
 "evp_bytestokey@npm:^1.0.3":
   version: 1.0.3
   resolution: "evp_bytestokey@npm:1.0.3"
@@ -4891,6 +4931,13 @@ __metadata:
   version: 1.19.5
   resolution: "fp-ts@npm:1.19.5"
   checksum: 67d2d9c3855d211ca2592b1ef805f98b618157e7681791a776d9d0f7f3e52fcca2122ebf5bc215908c9099fad69756d40e37210cf46cb4075dae1b61efe69e40
+  languageName: node
+  linkType: hard
+
+"from-exponential@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "from-exponential@npm:1.1.1"
+  checksum: af2765bd4f78836153c46cf4aff51ba9f2d1ac6b7d9568d69901d2045ba5b80a47de4f2a693bcc2006a7516cef71f636a4e42596cdd77a0addcc739539eb0f48
   languageName: node
   linkType: hard
 

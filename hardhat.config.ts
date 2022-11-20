@@ -7,6 +7,9 @@ import { resolve } from "path";
 import "./tasks/accounts";
 import "./tasks/deploy";
 
+require("@nomicfoundation/hardhat-chai-matchers");
+require("@nomicfoundation/hardhat-toolbox");
+
 const dotenvConfigPath: string = process.env.DOTENV_CONFIG_PATH || "./.env";
 dotenvConfig({ path: resolve(__dirname, dotenvConfigPath) });
 
